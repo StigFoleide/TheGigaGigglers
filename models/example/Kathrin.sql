@@ -1,0 +1,1 @@
+select * from covid19_epidemiological_data.public.scs_be_detailed_mortality limit 5
