@@ -1,0 +1,1 @@
+select * from {{ ref('SCS_BE_DETAILED_MORTALITY') }}
