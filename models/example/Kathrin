@@ -1,1 +1,0 @@
-select * from covid19_epidemiological_data.public.apple_mobility limit 5
