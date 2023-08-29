@@ -5,6 +5,7 @@ substring(to_char(im.inpatient_beds,'fm99999999'),1,1) as inp_beds
 --, round(ic.staffed_adult_icu_beds_occupied / im.inpatient_beds_used,3) as forhold
 , substring(to_char(de.tot_pop,'fm99999999'),1,1) as pop
 --, round(1000 * im.inpatient_beds_used / de.tot_pop,3)  as forhold2
+, 1 as antall
 from COVID19_EPIDEMIOLOGICAL_DATA.PUBLIC.CDC_INPATIENT_BEDS_ICU_ALL ic
 inner join COVID19_EPIDEMIOLOGICAL_DATA.PUBLIC.CDC_REPORTED_PATIENT_IMPACT im
 on ic.date = im.date and ic.state = im.state
